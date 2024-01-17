@@ -1,81 +1,74 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background: cornflowerblue;
+body {
+  background-color: #548687;
+  text-align: center;
 }
 
-.app{
-    background: white;
-    width: 90%;
-    max-width: 600px;
-    margin: 100px auto 0;
-    border-radius: 10px;
-    padding: 30px;
+.container {
+  height: 70vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
 }
 
-.app h1{
-    font-size: 20px;
-    color: brown;
-    font-weight: 600;
-    border-bottom: 1px solid #333;
-    padding-bottom: 30px;
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
 }
 
-.Quiz {
-    padding: 20px 0;
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  color: #b0413e;
+  background-color: #ffffc7;
 }
 
-.Quiz h2{
-    font-size: 18px;
-    color: lightsalmon;
-    font-weight: 600;
+#reset-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
 }
 
-.btn{
-    background: white;
-    color: #222;
-    font-weight: 500;
-    width: 100%;
-    border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s;
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
 }
 
-.btn:hover:not([disabled]){
-    background: #222;
-    color: azure;
+#msg {
+  color: #ffffc7;
+  font-size: 5vmin;
 }
 
-.btn:disabled{
-    cursor: no-drop;
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
 }
 
-#Next-btn{
-    background: #001e4d;
-    color: azure;
-    font-weight: 500;
-    width: 150px;
-    border: 0;
-    padding: 10px;
-    margin: 20px auto 0;
-    border-radius: 4px;
-    cursor: pointer;
-    display: none;
-}
-
-.correct{
-    background: #9aeabc;
-}
-
-.incorrect{
-    background: #ff9393;
+.hide {
+  display: none;
 }
